@@ -1,0 +1,267 @@
+﻿<Window x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="User Registration"  WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow" Background="#102027" Icon="Icons/User.ico" ResizeMode="NoResize" Activated="Window_Activated"  >
+    <Window.Resources>
+        <ResourceDictionary>
+           
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Grid Name="Gmain">
+        <Grid ShowGridLines="false" Name="G1" Visibility="Hidden"  >
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="120*"/>
+                <ColumnDefinition Width="32*"/>
+                <ColumnDefinition Width="152*"/>
+                <ColumnDefinition Width="153*"/>
+                <ColumnDefinition Width="152*"/>
+                <ColumnDefinition Width="153*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height=" 50*" />
+                <!--0 -->
+                <RowDefinition Height=" 50*"/>
+                <!--1-->
+                <RowDefinition Height=" 50*"/>
+                <!--2 -->
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*" />
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="icons/uu.png" Grid.Column="3" Grid.Row="4" Grid.RowSpan=" 4"/>
+            <StackPanel Grid.Column ="2" Grid.Row="8" Grid.RowSpan="5" Grid.ColumnSpan="3 " Background="Transparent">
+                <TextBlock  TextWrapping="Wrap"  TextAlignment="Center" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Center"   FontSize="13" >This email will be set to default admin account and can be used to reset password. You can change this email address anytime.</TextBlock>
+
+                <TextBlock  TextAlignment="Center" FontSize="18" Foreground="White" Margin="10,10,10,0">Your Email Address</TextBlock>
+                <Grid >
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox  Grid.Column="1"   Name="g1_txt_email" VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"   FontSize=" 16" TextChanged="g1_txt_email_TextChanged" TextInput="g1_txt_email_TextInput" MouseLeftButtonDown="g1_txt_email_MouseLeftButtonDown" KeyDown="g1_txt_email_KeyDown" />
+                    <TextBlock Grid.Column="2" Name="Msg_War" Text=" &#xF071;" FontFamily="{StaticResource FontAwsome}" FontSize="25" Foreground="Yellow"   Visibility="Collapsed" ></TextBlock>
+                </Grid>
+                <Grid>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  Name="txt_msg" Grid.Column="1" TextAlignment="Center"  Text="&#xf071; Warning! Enter a valid email." FontFamily="{StaticResource FontAwsome}" Foreground="Red"  Visibility="Collapsed"></TextBlock>
+                    <TextBlock  Name="txt_msg2" Grid.Column="1" TextAlignment="Center"  Text="&#xf06A; A valid email." FontFamily="{StaticResource FontAwsome}" Foreground="Green"  Visibility="Collapsed"></TextBlock>
+
+
+                </Grid>
+            </StackPanel>
+
+            <TextBlock Grid.Column ="2" Grid.Row="13" Grid.ColumnSpan="3 " Grid.RowSpan=" 2"  TextWrapping="Wrap"  TextAlignment="Center" FontSize="12" Foreground="#819ca9" Margin="10,10,10,8">Your email is kept strictly confidential.We will use your email to provide more personalized support and to send you latest updates, only if you wish.
+We hate "spam", too.</TextBlock>
+            <!--<Button  Name="Vi" Grid.Column=" 2" Grid.Row="16" Click="Vi_Click" Background="Aquamarine" BorderBrush="Transparent" >Visibility</Button>-->
+            <Button  Name="Win1_Next" Grid.Column="5" Grid.Row="16" Click="Win1_Next_Click"  Margin="80,0,0,0 "   >
+                <TextBlock x:Name="fnt4" Text="&#xf061;" FontFamily="{StaticResource FontAwsome}" FontSize="30" Cursor="Hand"  ></TextBlock>
+            </Button>
+
+            <Image Grid.Column="3" Grid.Row=" 17" Source="/icons/Menu-1.png " Margin="5"></Image>
+
+        </Grid>
+        <Grid ShowGridLines="False" Name="G2" Visibility="Hidden"  >
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height=" 50*" />
+                <!--0 -->
+                <RowDefinition Height=" 50*"/>
+                <!--1-->
+                <RowDefinition Height=" 50*"/>
+                <!--2 -->
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*" />
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Grid.Column ="1" Grid.Row="1" Grid.ColumnSpan=" 3" Grid.RowSpan="2 " TextWrapping="Wrap"  TextAlignment="Center" Foreground="White"   FontSize="40" >Let's Set Your Personal Account</TextBlock>
+            <TextBlock Grid.Column ="1" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3 " TextAlignment="Center" FontSize="18" Foreground="White" Margin="10,15,10,8">Please enter your name and login credentials used for admin access.</TextBlock>
+            <Grid Grid.Column ="1" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="10*" />
+                    <ColumnDefinition Width="auto" />
+
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="0" Margin="10,8,0,8 "  >
+                    <TextBlock x:Name="fnt1" Text="&#xf059;" FontFamily="{StaticResource FontAwsome}" Foreground="white" ></TextBlock>
+                </Viewbox >
+                <!--<Image Grid.Column="0" Source="Icons/question(white).png" Margin="10,8,0,8 "></Image>-->
+                <TextBlock Grid.Column ="1"  TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="Center" FontSize="13" Foreground="#2979ff" Margin="10,10,10,8">Learn more about users and default credentials</TextBlock>
+            </Grid>
+
+            <StackPanel Grid.Column="1" Grid.Row="4" Grid.ColumnSpan ="3" Grid.RowSpan="10"  Height=" auto"   >
+                <TextBlock   TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="left" FontSize="14" Foreground="White" Margin="120,10,10,0">First Name</TextBlock>
+                <TextBox  Name="g2_txt_firstname"    VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"    FontSize="16" Margin="120,0,100,0"  KeyDown="g2_txt_firstname_KeyDown"></TextBox>
+                <TextBlock   TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="left" FontSize="14" Foreground="White" Margin="120,10,10,0">Last Name</TextBlock>
+                <TextBox  Name="g2_txt_lastname"  KeyDown="g2_txt_lastname_KeyDown" VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"    FontSize="16" Margin="120,0,100,0" ></TextBox>
+                <TextBlock    TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="left" FontSize="14" Foreground="White" Margin="120,10,10,0" >Email</TextBlock>
+                <TextBox  Name="g2_txt_email" VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"    FontSize="16" Margin="120,0,100,0" ></TextBox>
+                <TextBlock   TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="left" FontSize="14" Foreground="White" Margin="120,10,10,0">Password</TextBlock>
+                
+                <PasswordBox Grid.Column="0" KeyDown="pass1_KeyDown" PasswordChanged="pass1_PasswordChanged"   Name="pass1" VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"    FontSize="16" Margin="120,0,100,0" ></PasswordBox>
+                <TextBlock x:Name="pass1_noti" VerticalAlignment="Center" HorizontalAlignment="Center" Text="&#xf059; Password Missmatch" Margin="0,1,0,0" FontFamily="{StaticResource FontAwsome}" Foreground="Red" FontSize="12" Visibility="Hidden" ></TextBlock>
+
+
+                <TextBlock   TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="left" FontSize="14" Foreground="White" Margin="120,10,10,0">Confirm Password</TextBlock>
+                <PasswordBox PasswordChanged="pass2_PasswordChanged" KeyDown="pass2_KeyDown"  Name="pass2"  VerticalAlignment="Center"  BorderBrush="#00e5ff" Background="Transparent" Foreground="White"    FontSize="16" Margin="120,0,100,0" ></PasswordBox>
+                <TextBlock x:Name="pass2_noti" VerticalAlignment="Center" HorizontalAlignment="Center" Text="&#xf059; Password Missmatch" Margin="0,1,0,0" FontFamily="{StaticResource FontAwsome}" Foreground="Red" FontSize="12" Visibility="Hidden" ></TextBlock>
+
+            </StackPanel>
+
+
+
+
+            <TextBlock Grid.Column ="1" Grid.Row="14" Grid.ColumnSpan="3 " Grid.RowSpan=" 3"  TextWrapping="Wrap"  TextAlignment="Center" FontSize="12" Foreground="#819ca9" Margin="10,10,10,8">Your email is kept strictly confidential.We will use your email to provide more personalized support and to send you latest updates, only if you wish.
+We hate "spam", too.</TextBlock>
+            <!--<Button  Name="Vii" Grid.Column=" 2" Grid.Row="16" Click="Vi_Click" Background="#00bfa5" BorderBrush="Transparent" >Visibility</Button>-->
+            <Button  Name="Win2_Next"  Grid.Column="4" Grid.Row="16"   Margin="80,0,0,0 "  Click="Win2_Next_Click"  >
+                <TextBlock x:Name="fnt5" Text="&#xf061;" FontFamily="{StaticResource FontAwsome}" FontSize="30" Cursor="Hand"  ></TextBlock>
+            </Button>
+            <Button  Name="Win2_Prev" Grid.Column="0" Grid.Row="16"   Click="Win2_Prev_Click" Margin="0,0,80,0 " Cursor="Hand"   >
+                <TextBlock x:Name="fnt3" Text="&#xf060;" FontFamily="{StaticResource FontAwsome}"  FontSize="30"   ></TextBlock>
+            </Button>
+            <Image Grid.Column="2" Grid.Row=" 17" Source="/icons/Menu-2.png " Margin="5"></Image>
+        </Grid>
+        <Grid ShowGridLines="False" Name="G3" Visibility="Visible"  >
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions >
+                <RowDefinition Height=" 50*" />
+                <!--0 -->
+                <RowDefinition Height=" 50*"/>
+                <!--1-->
+                <RowDefinition Height=" 50*"/>
+                <!--2 -->
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*" />
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+                <RowDefinition Height=" 50*"/>
+            </Grid.RowDefinitions>
+
+
+            <TextBlock Grid.Column ="1" Grid.Row="1" Grid.ColumnSpan=" 3" Grid.RowSpan="2 " TextWrapping="Wrap"  TextAlignment="Center" Foreground="White"   FontSize="40" >Choose Layout</TextBlock>
+            <!--<TextBlock Grid.Column ="1" Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="3 " TextAlignment="Center" FontSize="18" Foreground="White" Margin="10,15,10,8">Please enter your name and login credentials used for admin access.</TextBlock>-->
+            <Grid Grid.Column ="1" Grid.Row="3" Grid.ColumnSpan="3" HorizontalAlignment="Center" >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="10*" />
+                    <ColumnDefinition Width="auto" />
+
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="0" Margin="10,8,0,8 "  >
+                    <TextBlock x:Name="fnt6" Text="&#xf059;" FontFamily="{StaticResource FontAwsome}" Foreground="white" ></TextBlock>
+                </Viewbox >
+                <!--<Image Grid.Column="0" Source="Icons/question(white).png" Margin="10,8,0,8 "></Image>-->
+                <TextBlock Grid.Column ="1"  TextWrapping="Wrap" VerticalAlignment="Center"  TextAlignment="Center" FontSize="13" Foreground="#2979ff" Margin="10,10,10,8">Learn more about layouts and workspace</TextBlock>
+            </Grid>
+            <!--<Button >
+                <Image  Source="/icons/clickWhite.png"></Image>
+            </Button-->
+
+            <Button Name="btn_Standard" Click="btn_Standard_Click" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="5" Grid.RowSpan="7"  Margin=" 20,20,20,20"  >
+                <TextBlock  Text="&#xf245;" FontFamily="{StaticResource FontAwsome}" FontSize="100" Cursor="Hand"  ></TextBlock>
+            </Button>
+
+                                
+            <Button Name="btn_Visual" Click="btn_Visual_Click" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5" Grid.RowSpan="7"  Margin=" 20,20,10,20"  >
+                <TextBlock  Text="&#xf25a;" FontFamily="{StaticResource FontAwsome}" FontSize="120" Cursor="Hand"  ></TextBlock>
+            </Button>
+
+            
+            <TextBlock Name="Standard_Select" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="4" Grid.RowSpan="2"  Margin="0" TextAlignment="Center" Text="&#xf058;" FontFamily="{StaticResource FontAwsome}" FontSize="40" Foreground="#03DAC6" Visibility="Hidden" ></TextBlock>
+            <TextBlock Name="Visual_Select" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="4" Grid.RowSpan="2"  Margin="0" TextAlignment="Center" Text="&#xf058;" FontFamily="{StaticResource FontAwsome}" FontSize="40" Foreground="#03DAC6" Visibility="Hidden" ></TextBlock>
+
+
+
+
+
+
+
+
+            <!--<Image Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="5" Grid.RowSpan="7" Source="/icons/touchWhite.png" Margin=" 20,20,10,20"></Image>-->
+            <TextBlock Grid.Column="0" Grid.Row="12" Grid.ColumnSpan ="2 " Foreground="White" TextAlignment="Center" FontSize=" 18" >Standard</TextBlock >
+            <TextBlock Grid.Column="3" Grid.Row="12" Grid.ColumnSpan ="2 " Foreground="White"  TextAlignment="Center" FontSize=" 18" >Visual</TextBlock >
+            <TextBlock Grid.Column="0" Grid.Row="13" Grid.ColumnSpan ="2 " Foreground="White" TextAlignment="Center" FontSize=" 12" TextWrapping="Wrap" Margin="10,0,20,0 ">Use this layout if you are using barcodes or have a physical Keyboard attached to your computer.</TextBlock >
+            <TextBlock Grid.Column="3" Grid.Row="13" Grid.ColumnSpan ="2 " Foreground="White"  TextAlignment="Center" FontSize=" 12 " TextWrapping="Wrap" Margin="10,0,20,0 ">Use this layout if you wish to visually display your porduct and groups on sales screen.</TextBlock >
+            <Button Name="Win3_Next"  Grid.Column="4" Grid.Row="16"   Margin="80,0,0,0 "  Click="Win3_Next_Click" BorderBrush="Transparent"  >
+                <TextBlock  Text="&#xf061;" FontFamily="{StaticResource FontAwsome}" FontSize="30" Cursor="Hand"  ></TextBlock>
+            </Button>
+            <Button  Name="Win3_Prev" Grid.Column="0" Grid.Row="16"  Click="Win3_Prev_Click" Margin="0,0,80,0" Cursor="Hand"  >
+                <TextBlock  Text="&#xf060;" FontFamily="{StaticResource FontAwsome}"  FontSize="30"   ></TextBlock>
+            </Button>
+            <Image Grid.Column="2" Grid.Row=" 17" Source="/icons/Menu-3.png " Margin="5"></Image>
+        </Grid>
+
+
+
+
+    </Grid>
+
+
+
+
+
+</Window>
