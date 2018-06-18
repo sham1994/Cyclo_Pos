@@ -38,7 +38,7 @@ namespace WpfApplication1
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(Constring))
             {
-                CmdString = "SELECT Item_No,Item_Name,Item_Catagory FROM Items";
+                CmdString = "SELECT Stock_Cat,Descrip,Sales_P FROM Stock_Card";
                 SqlCommand cmd = new SqlCommand(CmdString, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable("ItemDetails");
@@ -59,7 +59,7 @@ namespace WpfApplication1
                 string CmdString = string.Empty;
                 using (SqlConnection con = new SqlConnection(Constring))
                 {
-                    CmdString = "SELECT Item_No,Item_Name,Item_Catagory FROM Items WHERE Item_Name LIKE '%" + txt_SearchName.Text + "%'";
+                    CmdString = "SELECT Stock_Cat,Descrip,Sales_P FROM Stock_Card WHERE Descrip LIKE '%" + txt_SearchName.Text + "%'";
                     SqlCommand cmd = new SqlCommand(CmdString, con);
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable("ItemDetails");
@@ -98,7 +98,7 @@ namespace WpfApplication1
                     string CmdString = string.Empty;
                     using (SqlConnection con = new SqlConnection(Constring))
                     {
-                        CmdString = "SELECT Item_No,Item_Name,Item_Catagory FROM Items WHERE Item_No LIKE '%" + txt_Searchcode.Text + "%'";
+                        CmdString = "SELECT Stock_Cat,Descrip,Sales_P FROM Stock_Card WHERE Stock_Cat LIKE '%" + txt_Searchcode.Text + "%'";
                         SqlCommand cmd = new SqlCommand(CmdString, con);
                         SqlDataAdapter sda = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable("ItemDetails");
@@ -123,7 +123,7 @@ namespace WpfApplication1
                     string CmdString = string.Empty;
                     using (SqlConnection con = new SqlConnection(Constring))
                     {
-                        CmdString = "SELECT Item_No,Item_Name,Item_Catagory FROM Items WHERE Item_No LIKE '%" + txt_Searchcode.Text + "%' and Item_Name LIKE '%" + txt_SearchName.Text + "%'" ;
+                        CmdString = "SELECT Stock_Cat,Descrip,Sales_P FROM Stock_Card WHERE Stock_Cat LIKE '%" + txt_Searchcode.Text + "%' and Descrip LIKE '%" + txt_SearchName.Text + "%'" ;
                         SqlCommand cmd = new SqlCommand(CmdString, con);
                         SqlDataAdapter sda = new SqlDataAdapter(cmd);
                         DataTable dt = new DataTable("ItemDetails");

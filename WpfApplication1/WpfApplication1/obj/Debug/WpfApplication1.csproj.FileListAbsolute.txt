@@ -79,3 +79,5 @@ C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\D
 C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\Debug\SearchItem.g.cs
 C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\Debug\css\Main_Menu\virtualtable.baml
 C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\Debug\SearchItem.baml
+C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\Debug\SelectedItem_MainMenuElement.g.cs
+C:\Users\Asus\Documents\Visual Studio 2017\WpfApplication1\WpfApplication1\obj\Debug\SelectedItem_MainMenuElement.baml
