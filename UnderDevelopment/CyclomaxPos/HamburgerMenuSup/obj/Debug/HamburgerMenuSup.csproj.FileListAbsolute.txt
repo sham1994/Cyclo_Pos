@@ -1,0 +1,2 @@
+C:\Users\CMX8\source\repos\CyclomaxPos\HamburgerMenuSup\obj\Debug\HamburgerMenuSup.csprojResolveAssemblyReference.cache
+C:\Users\CMX8\source\repos\CyclomaxPos\HamburgerMenuSup\obj\Debug\HamburgerMenuSup.csproj.CoreCompileInputs.cache
